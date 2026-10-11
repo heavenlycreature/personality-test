@@ -18,12 +18,12 @@ function Meter({ title, hint, score }) {
   )
 }
 
-export default function ResultScreen({ name, result, saveStatus, onRetrySave, onRestart }) {
+export default function ResultScreen({ name,friendName, result, saveStatus, onRetrySave, onRestart }) {
   const info = STYLE_INFO[result.style]
 
   return (
     <div className="flex flex-1 flex-col px-6 pb-8 pt-14">
-      <p className="text-sm text-slate-600">Results for {name}</p>
+      <p className="text-sm text-slate-600">Results for {name}'s attachment to {friendName}</p>
       <h1 className="mt-1 text-4xl font-semibold text-slate-900">{result.style}</h1>
       <p className="mt-1 text-sm text-violet-800">{info.traits}</p>
       <p className="mt-5 text-[15px] leading-relaxed text-slate-700">{info.description}</p>

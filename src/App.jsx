@@ -60,8 +60,8 @@ export default function App() {
   }
 
   return (
-    <div className="min-h-[100dvh] bg-[linear-gradient(160deg,#dfe3f6_0%,#f3eeff_45%,#e8f0fb_100%)] font-sans text-slate-900">
-      <main className="mx-auto flex min-h-[100dvh] w-full max-w-md flex-col">
+    <div className="min-h-dvh bg-[linear-gradient(160deg,#dfe3f6_0%,#f3eeff_45%,#e8f0fb_100%)] font-sans text-slate-900">
+      <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col">
         {stage === 'start' && (
           <StartScreen
             initialFriendName={friendName}
@@ -84,6 +84,7 @@ export default function App() {
         {stage === 'result' && result && (
           <ResultScreen
             name={name}
+            friendName={friendName}
             result={result}
             saveStatus={saveStatus}
             onRetrySave={() => save(name, answers)}
