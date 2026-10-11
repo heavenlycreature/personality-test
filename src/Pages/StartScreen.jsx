@@ -92,7 +92,7 @@ export default function StartScreen({initialFriendName = '', initialName = '', o
             onChange={(e) => setName(e.target.value)}
             maxLength={60}
             autoComplete="nickname"
-            placeholder="Example: Lepin"
+            placeholder="Example: Nabiel"
             className={inputClass}
           />
 
