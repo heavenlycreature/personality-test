@@ -80,11 +80,11 @@ export default function QuestionScreen({
                   className={`flex items-center justify-between gap-3 rounded-xl border px-4 py-3.5 transition-colors peer-focus-visible:ring-2 peer-focus-visible:ring-violet-600 peer-focus-visible:ring-offset-2 ${
                     selected
                       ? 'border-slate-900 bg-violet-100'
-                      : 'border-slate-200 bg-white hover:border-slate-400'
+                      : 'border-slate-200 bg-white hover:border-slate-400' 
                   }`}
                 >
                   <span className="text-[15px] text-slate-900">
-                    <span className="mr-2 font-semibold tabular-nums">{opt.value}</span>
+                    {/* <span className="mr-2 font-semibold tabular-nums">{opt.value}</span> */}
                     {opt.label}
                   </span>
                   <span
@@ -110,7 +110,7 @@ export default function QuestionScreen({
           disabled={value === null}
           className="flex w-full items-center justify-center gap-2 rounded-xl bg-black py-4 text-base font-semibold text-white transition-opacity focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-40"
         >
-          {isLast ? 'Kirim jawaban' : 'Lanjut'} <ArrowRight />
+          {isLast ? 'Send answers' : 'Next'} <ArrowRight />
         </button>
       </div>
     </div>

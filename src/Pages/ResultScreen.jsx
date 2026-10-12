@@ -68,7 +68,7 @@ export default function ResultScreen({ name,friendName, result, saveStatus, onRe
           onClick={onRestart}
           className="mt-4 w-full rounded-xl border border-slate-900 bg-white py-4 text-base font-semibold text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-violet-600 focus-visible:ring-offset-2"
         >
-          Ulangi tes
+          Retry test
         </button>
       </div>
     </div>
